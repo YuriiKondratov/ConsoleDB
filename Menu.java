@@ -82,19 +82,4 @@ public class Menu {
         System.out.println("Введите номер опции (0 - выход из программы, 1 - вставка, 2 - удаление, 3 - получение всех записей, 4 - поиск по id): ");
         return s.nextInt();
     }
-
-    public static void test_db() {
-        Database db = new Database();
-        Credential c1 = new Credential("1", "1111");
-        Credential c2 = new Credential("2", "2222");
-        Credential c3 = new Credential("3", "3333");
-        ArrayList<Integer> ids = (ArrayList<Integer>) db.insert("credentials", c1, c2, c3);
-
-        for (int id : ids) System.out.print(id);
-        try {
-            db.insert("credentials", c2);
-        } catch (ConcurrentModificationException e) {
-            System.out.println(e.getMessage());
-        }
-    }
 }
