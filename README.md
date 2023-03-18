@@ -7,4 +7,4 @@ Project uses my own implementation of in memory database from `database.java` fi
 To run this project use `mvnw spring-boot:run`.
 
 #### Docs
-After running the project you can access Open API docs on http://localhost:8080/swagger-ui/.
+After running the project you can access Open API docs on http://localhost:8080/swagger-ui.html.
