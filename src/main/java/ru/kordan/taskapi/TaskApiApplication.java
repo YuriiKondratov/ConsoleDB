@@ -1,4 +1,4 @@
-package ru.vibelab.task_api;
+package ru.kordan.taskapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
